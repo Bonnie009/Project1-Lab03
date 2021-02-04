@@ -18,127 +18,277 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
-<div class="container">
-  <header class="page_header">
-    
-    <div class="logo">
-      <img src="/images/placeholder.png" alt="logo_img"/>
-    </div>
+<body class="container">
 
-    <div class="search">
-      <input class="src_bar" type="text"/>
-      <input class="src_button" type="submit"/>
-    </div>
-
-    <div class="icons">
-      <ul>
-        <li><a href="#">first</a></li>
-        <li><a href="#">second</a></li>
-        <li><a href="#">third</a></li>
+  <header class="header">
+      <div class="logo">
+          <img class="logo__img" src="/images/placeholder.png" alt="img description"/>
+      </div>
+      <form class="form form--search">
+          <input class="form__input" type="text"/>
+          <input class="form__btn btn--big btn--disabled js-site-search" type="submit"/>
+      </form>
+      <ul class="nav">
+          <li>
+              <a href="" class="">icon 1</a>
+          </li>
+          <li>
+              <a href="" class="">icon 2</a>
+          </li>
+          <li>
+              <a href="" class="">icon 3</a>
+          </li>
       </ul>
-    </div>
   </header>
 
-  <nav>
-    <li><a href="#">home</a></li>
-    <li><a href="#">cinema</a></li>
-    <li><a href="#">magazine</a></li>
-    <li><a href="#">home</a></li>
-    <li><a href="#">cinema</a></li>
-    <li><a href="#">magazine</a></li>
-    <li><a href="#">home</a></li>
-  </nav>
-
-  <section class="top_stories">
-    <h1>Top stories</h1>
-
-    <div class="cinema_img">
-      <h2 class="subheading">sub heading</h2>
-      <img src="/images/placeholder.png"/>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-      <h2 class="subheading">sub heading</h2>
-      <img src="h/images/placeholder.png"/>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
-      <h2 class="subheading">sub heading</h2>
-      <img src="/images/placeholder.png"/>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
+  <section class="featured">
+      <h1 class="heading page__section__heading">
+          featured items
+      </h1>
+      <div class="featured__item">
+          <img class="featured__item__img" src="/images/placeholder.png" alt="img description"/>
+          <h2 class="heading featured__item__title">
+              feature
+          </h2>
+          <p class="featured__item__excerpt">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+          </p>
+      </div>
+      <div class="featured__item">
+          <img class="featured__item__img" src="/images/placeholder.png" alt="img description"/>
+          <h2 class="heading featured__item__title">
+              feature
+          </h2>
+          <p class="featured__item__excerpt">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+          </p>
+      </div>
+      <div class="featured__item">
+          <img class="featured__item__img" src="/images/placeholder.png" alt="img description"/>
+          <h2 class="heading featured__item__title">
+              feature
+          </h2>
+          <p class="featured__item__excerpt">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+          </p>
+      </div>
   </section>
 
-  <main class="main">
-    <h1>Main heading</h1>
-    <div class="main_right">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna et pharetra pharetra massa massa ultricies mi quis hendrerit.</p>
-    </div>
+  <main class="page__main">
+      <article class="article">
+          <header class="article__header">
+              <h1 class="heading article__headline">
+                  article heading
+              </h1>
+          </header>
+          <div class="article__content">
+              <p class="article__excerpt">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
 
-    <div class="main_left">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna et pharetra pharetra massa massa ultricies mi quis hendrerit.</p>
-    </div>
-    
-    <div class="main_img">
-    <img src="/images/placeholder.png"/>
-    </div>
+              <section class="article__figures">
+                  <figure class="article__img--big">
+                      <img src="/images/placeholder.png"/>
+                  </figure>
+                  <figure class="article__img--small">
+                      <img src="/images/placeholder.png" alt="img description"/>
+                  </figure>
+                  <figure class="article__img--small">
+                      <img src="/images/placeholder.png" alt="img description"/>
+                  </figure>
+                  <figure class="article__img--small">
+                      <img src="/images/placeholder.png" alt="img description"/>
+                  </figure>
+                  <figure class="article__img--small">
+                      <img src="/images/placeholder.png" alt="img description"/>
+                  </figure>
+              </section>
 
-    <div class="under_main_img">
-      <img src="/images/placeholder.png"/>
-      <img src="/images/placeholder.png"/>
-      <img src="/images/placeholder.png"/>
-      <img src="/images/placeholder.png"/>
-    </div>
-  
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna et pharetra pharetra massa massa ultricies mi quis hendrerit. Sed turpis tincidunt id aliquet risus feugiat in ante. Odio facilisis mauris sit amet massa. Tortor consequat id porta nibh venenatis cras sed felis eget. Eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis. Ut ornare lectus sit amet est placerat in egestas erat. Id porta nibh venenatis cras sed felis. Donec et odio pellentesque diam volutpat commodo sed egestas. Diam vulputate ut pharetra sit. Molestie a iaculis at erat pellentesque adipiscing commodo elit. Sed ullamcorper morbi tincidunt ornare massa eget egestas.</p>
+              <section class="article__body">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                  <figure class="article__figure">
+                      <img class="article__img" src="/images/placeholder.png" alt="img description"/>
+                      <figcaption class="figure__caption">
+                          <p>
+                              figure caption
+                          </p>
+                      </figcaption>
+                  </figure>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+              </section>
 
+          </div>
+          <footer class="article__footer">
+              <div class="article__categories">
+                  <h6 class="heading article__category__heading">
+                      category
+                  </h6>
+                  <ul class="article__category__list">
+                      <li class="article__category">
+                          category01
+                      </li>
+                      <li class="article__category">
+                          category02
+                      </li>
+                  </ul>
+              </div>
+          </footer>
+      </article>
   </main>
-
-  <section class="widget">
-    <h1>widget heading</h1>
-      <div class="widget_one">
-        <h2>heading</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-        </p>
+  <div class="page__sidebar">
+      <div class="widget top-stories">
+          <h2 class="heading widget__heading--tab">
+              Widget Heading
+          </h2>
+          <div class="widget__content">
+              <ul class="widget__list">
+                  <li class="widget__list__item">
+                      <div class="widget__item__content">
+                          <h3 class="heading item__heading">
+                              Heading
+                          </h3>
+                          <p>
+                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                          </p>
+                      </div>
+                      <figure class="thumbnail--small">
+                          <img src="/images/placeholder.png" alt="img description"/>
+                      </figure>
+                  </li>
+                  <li class="widget__list__item">
+                      <div class="widget__item__content">
+                          <h3 class="heading item__heading">
+                            Heading
+                          </h3>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                          </p>
+                      </div>
+                      <figure class="thumbnail--small">
+                          <img src="/images/placeholder.png" alt="img description"/>
+                      </figure>
+                  </li>
+                  <li class="widget__list__item">
+                      <div class="widget__item__content">
+                          <h3 class="heading item__heading">
+                            Heading
+                          </h3>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                          </p>
+                      </div>
+                      <figure class="thumbnail--small">
+                          <img src="/images/placeholder.png" alt="img description"/>
+                      </figure>
+                  </li>
+              </ul>
+          </div>
       </div>
-
-      <div class="widget_two">
-        <h2>heading</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-        </p>
+      <div class="widget related-articles">
+          <h2 class="heading widget__heading">
+              Widget Heading
+          </h2>
+          <div class="widget__content">
+              <ul class="">
+                  <li class="widget__list__item">
+                      <div class="widget__item__content">
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                          </p>
+                      </div>
+                      <figure class="thumbnail--small">
+                          <img src="/images/placeholder.png" alt="img description"/>
+                      </figure>
+                  </li>
+              </ul>
+          </div>
       </div>
-
-      <div class="widget_three">
-        <h2>heading</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-        </p>
+      <div class="widget article-archive">
+          <h2 class="heading widget__heading">
+              Widget Heading
+          </h2>
+          <div class="widget__content">
+              <ul class="archive-list">
+                  <li class="archive-item">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                  </li>
+                  <li class="archive-item">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                  </li>
+                  <li class="archive-item">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                  </li>
+                  <li class="archive-item">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                  </li>
+                  <li class="archive-item">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                  </li>
+                  <li class="archive-item">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                  </li>
+                  <li class="archive-item">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                  </li>
+              </ul>
+          </div>
       </div>
-
-      <div class="widget_four">
-        <h2>heading</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-        </p>
+      <div class="widget tag-cloud">
+          <h2 class="heading">
+              Widget Heading
+          </h2>
+          <div class="widget__content">
+              <span class="tag">tag name</span>
+              <span class="tag">tag name</span>
+              <span class="tag">tag name</span>
+              <span class="tag">tag name</span>
+              <span class="tag">tag name</span>
+          </div>
       </div>
-
-  </section>
-
-</div>
-
-  <!-- Add your site or application content here -->
-
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  </div>
+  <footer class="page_footer">
+      <div class="col">
+          <h4 class="heading">Home</h4>
+      </div>
+      <div class="col">
+          <h4 class="heading">Features</h4>
+      </div>
+      <div class="col">
+          <h4 class="heading">Page layouts</h4>
+      </div>
+      <div class="col">
+          <h4 class="heading">pages</h4>
+      </div>
+  </footer>
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script>
+      window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
+  </script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
-
 </html>
